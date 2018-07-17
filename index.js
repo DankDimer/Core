@@ -1,12 +1,3 @@
-//TO DO:
-//- Add prefix.json
-//- Add warnings.json
-//- Add xp.json
-//- Add coins.json
-//- Add badwords.txt
-//- Add colors.json
-//- Add Procfile
-
 //***********************************************************************************************************************************************
 // -------------------------------------------
 const Discord = require("discord.js")
@@ -16,7 +7,6 @@ const colors = require("./colors.json")
 const botconfig = require("./botconfig.json")
 const coins = require("./coins.json")
 const xp = require("./xp.json")
-const badwords = require("./badwords.txt")
 // -------------------------------------------
 const client = new Discord.Client()
 const bot = new Discord.Client()
