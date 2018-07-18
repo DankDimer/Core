@@ -3,7 +3,6 @@ const fs = require("fs");
 let coins = require("../coins.json");
 
 module.exports.run = async (bot, message, args) => {
-  //!pay @isatisfied 59345
 
   if(!coins[message.author.id]){
     return message.reply("You don't have any coins!")
@@ -20,7 +19,7 @@ module.exports.run = async (bot, message, args) => {
   let pCoins = coins[pUser.id].coins;
   let sCoins = coins[message.author.id].coins;
 
-  if(sCoins < args[0]) return message.reply("Not enough coins there!");
+  if(sCoins < args[0]) return message.reply("You don't have enough coins!");
 
   coins[message.author.id] = {
     coins: sCoins - parseInt(args[1])

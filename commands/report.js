@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
-const botconfig = require("../botconfig.json");
-const red = botconfig.red;
-const green = botconfig.green;
-const orange = botconfig.orange;
+const colors = require("./colors.json");
+const red = colors.red;
+const green = colors.green;
+const orange = colors.orange;
 const errors = require("../utils/errors.js");
 
 module.exports.run = async (bot, message, args) => {

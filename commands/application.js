@@ -11,7 +11,7 @@ module.exports.run = async (bot, message, args) => {
     .setFooter("application template")
 let aembed = new Discord.RichEmbed()
     .setAuthor(message.author.id)
-    .setColor(colors.green)
+    .setColor("000000")
     .addField("Requirement 1", "Must take the application seriously (For the server owners out ther you must have an 'applications' channel and exactly that)")
     .addField("Requirement 2", "Must list The following: What role (if you dont know the roles, ask a staff member), how long you have been in the server, why you want that role, and how active you are.")
     .setFooter("Bot was made by DankDimer#2285");
