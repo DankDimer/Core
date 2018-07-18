@@ -20,7 +20,9 @@ module.exports.run = async (bot, message, args) => {
   let sCoins = coins[message.author.id].coins;
 
   if(sCoins < args[0]) return message.reply("You don't have enough coins!");
-
+  if(message.author.id = pUser) return message.reply("You can't pay yourself!");
+  
+    
   coins[message.author.id] = {
     coins: sCoins - parseInt(args[1])
   };
@@ -30,7 +32,7 @@ module.exports.run = async (bot, message, args) => {
   };
 
   message.channel.send(`${message.author} has given ${pUser} ${args[1]} coins.`);
-
+  console.log(`${message.author} has given ${pUser} ${args[1]} coins.`)
   fs.writeFile("./coins.json", JSON.stringify(coins), (err) => {
     if(err) cosole.log(err)
   });
