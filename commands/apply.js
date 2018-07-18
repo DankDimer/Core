@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
 
 let applyembed = new Discord.RichEmbed()
 .setAuthor(message.author.username)
-.setColor("000000")
+.setColor("#000000")
 .addField("Applicant", `${aUser} With ID: ${aUser.id}`)
 .addField("Application: ", aReason)
 .setFooter("Any aplications that are not taken seriously will be taken a such!");
