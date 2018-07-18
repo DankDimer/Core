@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const client = new Discord.Client({disableEveryone: true});
 const colors = require("./colors.json")
+const fs = require("fs")
 let warns = JSON.parse(fs.readFileSync("./warnings.json", "utf8"))
 
 module.exports.run = async (bot, message, args) => {
