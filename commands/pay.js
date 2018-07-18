@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
   let sCoins = coins[message.author.id].coins;
 
   if(sCoins < args[0]) return message.reply("You don't have enough coins!");
-  if(message.author.id = pUser) return message.reply("You can't pay yourself!");
+ // if(message.author.id = pUser) return message.reply("You can't pay yourself!");
   
     
   coins[message.author.id] = {
