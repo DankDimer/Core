@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const bot = new Discord.Client({disableEveryone: true});
 const client = new Discord.Client({disableEveryone: true});
 const colors = require("./colors.json")
+let warns = JSON.parse(fs.readFileSync("./warnings.json", "utf8"))
 
 module.exports.run = async (bot, message, args) => {
 if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("***You maynot warn this user***");
